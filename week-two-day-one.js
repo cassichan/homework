@@ -12,9 +12,8 @@
 function exponentiateNum(base, exponent) {
     return base ** exponent;
 }
-
+//Math.pow(base, exponent)
 console.log(exponentiateNum(4, 2))
-
 
 
 // Create a function that takes an array and a string as arguments and returns the index of the string.
@@ -25,8 +24,7 @@ let testArray = [30, false, 'woof', 10]
 function calculateIndexOfString(arr, str) {
     for (i = 0; i < arr.length; i++) {
         if (arr[i] === str) {
-            
-            return arr.indexOf(str)
+            return arr.indexOf(str)    //Loop not needed
         }
     }
 }
