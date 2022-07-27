@@ -45,3 +45,7 @@ function determineDataTypes (arr) {
 }
 
 console.log(determineDataTypes(myArr))
+
+
+
+
