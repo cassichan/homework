@@ -21,15 +21,24 @@ console.log(exponentiateNum(4, 2))
 let testString = 'woof'
 let testArray = [30, false, 'woof', 10]
 
-function calculateIndexOfString(arr, str) {
-    for (i = 0; i < arr.length; i++) {
-        if (arr[i] === str) {
-            return arr.indexOf(str)    //Loop not needed
-        }
-    }
+// function calculateIndexOfString(arr, str) {
+//     for (i = 0; i < arr.length; i++) {
+//         if (arr[i] === str) {
+//             return arr.indexOf(str)    //Loop not needed
+//         }
+//     }
+// }
+
+// console.log(calculateIndexOfString(testArray, testString))
+
+const getStringIndex = (arr, str) => {
+    arr.find((str) => {
+        let stringIndex = arr.indexOf(str);
+        return stringIndex;
+    })
 }
 
-console.log(calculateIndexOfString(testArray, testString))
+console.log(getStringIndex(testArray, testString))
 
 
 // Create a function that takes an array and returns the types of values (data types) in a new array.

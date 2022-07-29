@@ -24,8 +24,7 @@ console.log(car.year);
 let arrayOfFaveStuff = ['cats', 'coffee', 'Disney'];
 
 const getFirstElement = (arr) => {
-    return arr.shift();
-    // return arr[0]; -> also works
+    return arr[0];
 };
 
 console.log(getFirstElement(arrayOfFaveStuff));
