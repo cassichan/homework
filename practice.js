@@ -24,3 +24,18 @@ function getElementOfSubArray (arr, outerIndex, innerIndex) {
 }
 getElementOfSubArray()
 console.log(getElementOfSubArray(testArr,0, 0))
+
+
+//Write a function to get the index of an element in a subarray and the index of subarray where its element matches a value passed as a parameter
+
+function getIndexOfSpecificElement (arr, element) {
+    let Foundelement = arr.find(element => arr.indexOf(element))
+console.log(Foundelement)
+   //Find how many subarrays there are
+   //Find the index of the subarray with the element
+    // return arr.indexOf(element)
+
+}
+
+getIndexOfSpecificElement(testArr, 6)
+// console.log(getIndexOfSpecificElement(testArr, 6))
